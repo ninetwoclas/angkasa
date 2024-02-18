@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Nine Two</title>
+  <link rel="shortcut icon" href="img/ic/logo.jpg" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+  <!-- feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/main-mobile.css">
+  <link rel="stylesheet" href="css/clearing.css">
+  <link rel="stylesheet" href="css/navbar-mobile.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <!-- animation css -->
+  <link rel="manifest" href="js/manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <div class="per">
+    <h1>Mohon Maaf Web belum Tersedia untuk ukuran Layar Saat ini</h1>
+  </div>
+  <div class="overlay" id="overlay">
+    <div class="nsr">Sorry, screenshots are not allowed on this website.</div>
+  </div>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Nine<span>Two</span>.</a>
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#struktur">Struktur</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#contact">Kontak</a>
+    </div>
+    <div class="navbar-extra">
+      <a id="installButton" style="display: none;"><i data-feather="download"></i></a>
+      <a href="https://www.instagram.com/angkasa.twoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+          data-feather="instagram"></i></a>
+      <a id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Hero Section Start-->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>SELAMAT DATANG DI <span>ANGKASA</span></h1>
+      <p>"Jika kita bersatu, tidak ada yang tidak mungkin. Bersama, kita bisa menggapai bintang-bintang di angkasa."</p>
+      <a href="#about" class="cta">jelajahi</a>
+    </main>
+  </section>
+  <!-- Hero Section End-->
+
+  <!-- About Section Start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> kami</h2>
+    <div class="row">
+      <div class="about-img">
+        <img src="img/Galeri/tentang-kami.jpg" alt="tentang kami">
+      </div>
+      <div class="content">
+        <h3>"Angkatan Salapan Dua"</h3>
+        <p>Kelas 9.2, yang kami juluki "Angkasa," adalah petualangan belajar kami. Seperti penjelajah angkasa, kami
+          menjelajahi dunia pengetahuan, menaklukkan tantangan, dan bersiap menghadapi masa depan.
+        </p>
+        <p>"Belajar adalah wahana kita menuju angkasa pengetahuan yang tak terbatas, di mana hanya imajinasi yang
+          menjadi batasnya."</p>
+      </div>
+      <a href="#angkasaMember" class="all-member">See A ll Members</a>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Struktur Section Start -->
+  <section id="struktur" class="struktur">
+    <h2><span>Struktur</span> Organisasi</h2>
+    <p>Struktur kelas adalah seperti dasar kuat yang memungkinkan perjalanan kami mengejar bintang-bintang impian di
+      angkasa pendidikan.</p>
+    <p>Tekan Avatar untuk informasi lebih lanjut</p>
+    <div class="row">
+      <div class="struktur-card">
+        <img src="img/struktur/st1.JPG" alt="Wali kelas" onclick="showPopupOne(this)" id="gambarPopup"
+          class="imgstruktur">
+        <div class="deskripsi">
+          <h3>Wali Kelas</h3>
+          <p onclick="showPopupOne(this)">Fitri Yulianti Adha S.pd</p>
+        </div>
+        <div id="popup" class="popup">
+          <img src="img/struktur/st1.JPG" alt="Wali kelas" class="imgpopup">
+          <p>seperti bintang, mengarahkan perjalanan kami menuju masa depan.</p>
+          <p>bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore?</p>
+          <button onclick="hidePopupOne()" class="tbl-popup">Tutup</button>
+        </div>
+      </div>
+
+      <div class="struktur-card">
+        <div class="deskripsi">
+          <h3>Ketua Kelas</h3>
+          <p onclick="popupKetkel()">Fadli Nugraha</p>
+        </div>
+        <img src="img/struktur/st2.JPG" alt="Murid" onclick="popupKetkel()" id="gambarPopupKetkel" class="imgstruktur">
+        <div id="popupKetkel" class="popup">
+          <img src="img/struktur/st2.JPG" alt="Murid" class="imgpopup">
+          <p>"Ketua kelas, pemimpin yang mengilhami, secercah bintang di angkasa.</p>
+          <button onclick="hidePopupKetkel()" class="tbl-popup">Tutup</button>
+          <!-- <p>seperti bintang, mengarahkan perjalanan kami menuju masa depan.</p> -->
+        </div>
+      </div>
+
+
+      <div class="struktur-card">
+        <img src="img/struktur/st7.JPG" alt="Murid" onclick="popupWaketkel()" id="gambarPopupWaketkel" class="imgstruktur">
+        <div class="deskripsi">
+          <h3>Wakil Ketua Kelas</h3>
+          <p onclick="popupWaketkel()">Khairan Azzam Nabigh D</p>
+        </div>
+        <div id="popupWaketkel" class="popup">
+          <img src="img/struktur/st7.JPG" alt="Murid" class="imgpopup">
+          <!-- <p>"Ketua kelas, pemimpin yang mengilhami, secercah bintang di angkasa.</p> -->
+          <p>Wakil ketua kelas, setia menemani, seperti bintang terdekat di angkasa.</p>
+          <button onclick="hidePopupWaketkel()" class="tbl-popup">Tutup</button>
+        </div>
+      </div>
+
+      <div class="struktur-card">
+        <div class="deskripsi">
+          <h3>Sekertaris 1</h3>
+          <p onclick="popupSekter()">Hafida Putri Syaharani</p>
+        </div>
+        <img src="img/struktur/st4.JPG" alt="Murid" onclick="popupSekter()" id="gambarPopupSekter" class="imgstruktur">
+        <div id="popupSekter" class="popup">
+          <img src="img/struktur/st4.JPG" alt="Murid" class="imgpopup">
+          <p>Sekertaris 1, mencatat jejak kami, seperti konstelasi di angkasa pendidikan.</p>
+          <button onclick="hidePopupSekter()" class="tbl-popup">Tutup</button>
+        </div>
+      </div>
+
+      <div class="struktur-card">
+        <img src="img/struktur/st5.JPG" alt="Murid" onclick="popupSekterDua()" id="gambarPopupSekterDua" class="imgstruktur">
+        <div class="deskripsi">
+          <h3>Sekertaris 2</h3>
+          <p onclick="popupSekterDua()">Rasya Keane Hareva</p>
+        </div>
+        <div id="popupSekterDua" class="popup">
+          <img src="img/struktur/st5.JPG" alt="Murid" class="imgpopup">
+          <p>Sekertaris 2, membantu menyusun rencana, secercah bintang pelengkap di angkasa.</p>
+          <!-- <p>Sekertaris 1, mencatat jejak kami, seperti konstelasi di angkasa pendidikan.</p> -->
+          <button onclick="hidePopupSekterDua()" class="tbl-popup">Tutup</button>
+        </div>
+      </div>
+
+      <div class="struktur-card">
+        <div class="deskripsi">
+          <h3>Bendahara 1</h3>
+          <p onclick="popupBendara()">Reyma Chadya Aryani</p>
+        </div>
+        <img src="img/struktur/st3.JPG" alt="Murid" onclick="popupBendara()" id="gambarPopupBendara" class="imgstruktur">
+        <div id="popupBendara" class="popup">
+          <img src="img/struktur/st3.JPG" alt="Murid" class="imgpopup">
+          <p>Bendahara 1, mengelola dana seperti bintang menghiasi angkasa.</p>
+          <button onclick="hidePopupBendara()" class="tbl-popup">Tutup</button>
+        </div>
+      </div>
+
+
+      <div class="struktur-card">
+        <img src="img/struktur/st6.JPG" alt="Murid" onclick="popupBendaraDua()" id="gambarPopupBendaraDua"
+          class="imgstruktur">
+        <div class="deskripsi">
+          <h3>Bendahara 2</h3>
+          <p onclick="popupBendaraDua()">Jihan Irda Maulida</p>
+        </div>
+        <div id="popupBendaraDua" class="popup">
+          <img src="img/struktur/st6.JPG" alt="Murid" class="imgpopup">
+          <p>Bendahara 2, menjaga keuangan, seperti bintang terang di angkasa</p>
+          <button onclick="hidePopupBendaraDua()" class="tbl-popup">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Struktur Section End -->
+
+  <!-- Gallery Section Start -->
+
+  <section id="gallery">
+    <div class="title-gallery">
+      <h1>Ga<span>ll</span>ery</h1>
+    </div>
+
+    <div class="gallery">
+      <button class="scroll-btn left">&lt; &lt;</button>
+      <div class="gallery-content">
+        <div class="item"><img src="img/Galeri/slide1-1.jpg" alt="Image 1"></div>
+        <div class="item"><img src="img/Galeri/slide1-2.jpg" alt="Image 2"></div>
+        <div class="item"><img src="img/Galeri/slide1-3.jpg" alt="Image 3"></div>
+        <div class="item"><img src="img/Galeri/slide1-4.jpg" alt="Image 4"></div>
+        <div class="item"><img src="img/Galeri/slide1-5.jpg" alt="Image 5"></div>
+        <div class="item"><img src="img/Galeri/slide1-6.jpg" alt="Image 6"></div>
+        <div class="item"><img src="img/Galeri/slide1-7.jpg" alt="Image 7"></div>
+        <div class="item"><img src="img/Galeri/slide1-8.jpg" alt="Image 8"></div>
+        <div class="item"><img src="img/Galeri/slide1-9.jpg" alt="Image 9"></div>
+        <div class="item"><img src="img/Galeri/slide1-10.jpg" alt="Image 10"></div>
+        <div class="item"><img src="img/Galeri/slide1-11.jpg" alt="Image 11"></div>
+        <div class="item"><img src="img/Galeri/slide1-12.jpg" alt="Image 12"></div>
+        <div class="item"><img src="img/Galeri/slide1-13.jpg" alt="Image 13"></div>
+        <div class="item"><img src="img/Galeri/slide1-14.jpg" alt="Image 14"></div>
+        <!-- <div class="item"><img src="img/Galeri/slide-2.jpg" alt="Image 5"></div> -->
+        <!-- <div class="item"><img src="img/galeri-6.jpg" alt="Image 6"></div> -->
+        <!-- Add more images here -->
+      </div>
+      <button class="scroll-btn right">&gt; &gt;</button>
+      <div class="counter"></div>
+    </div>
+    <div class="gallery-2">
+      <button class="scroll-btn-2 left-2 tengah">&lt; &lt;</button>
+      <div class="gallery-content-2">
+        <div class="item-2"><img src="img/Galeri/slide2-3.JPG" alt="Image 1"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-4.JPG" alt="Image 2"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-7.JPG" alt="Image 3"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-8.JPG" alt="Image 4"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-5.JPG" alt="Image 5"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-6.JPG" alt="Image 6"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-9.JPG" alt="Image 7"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-10.JPG" alt="Image 8"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-1.JPG" alt="Image 9"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-2.JPG" alt="Image 10"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-11.JPG" alt="Image 11"></div>
+        <div class="item-2"><img src="img/Galeri/slide2-12.JPG" alt="Image 12"></div>
+        <!-- <div class="item-2"><img src="img/Galeri/slide2-1.JPG" alt="Image 12"></div> -->
+        <!-- Add more images here -->
+      </div>
+      <button class="scroll-btn-2 right-2 tengah">&gt; &gt;</button>
+      <div class="counter-2"></div>
+    <div class="gallery-3">
+      <div class="title-member" id="angkasaMember">
+        <h2>Angkasa member</h2>
+      </div>
+      <button class="scroll-btn-3 left-3 akhir">&lt; &lt;</button>
+      <div class="gallery-content-3">
+        <div class="item-3"><img src="img/Galeri/slide3-1.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-31.JPG" alt="Image 2"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-25.JPG" alt="Image 3"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-19.JPG" alt="Image 4"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-18.JPG" alt="Image 5"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-5.JPG" alt="Image 6"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-32.JPG" alt="Image 7"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-4.JPG" alt="Image 8"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-28.JPG" alt="Image 9"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-14.JPG" alt="Image 10"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-10.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-29.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-21.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-20.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-17.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-3.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-27.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-26.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-6.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-8.JPG" alt="Image 1"></div>
+        <!-- <div class="item-3"><img src="img/Galeri/slide3-1.JPG" alt="Image 1"></div> -->
+        <div class="item-3"><img src="img/Galeri/slide3-7.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-23.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-30.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-9.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-13.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-22.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-24.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-12.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-11.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-15.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-16.JPG" alt="Image 1"></div>
+        <div class="item-3"><img src="img/Galeri/slide3-2.JPG" alt="Image 1"></div>
+        <!-- <div class="item-2"><img src="img/Galeri/slide2-1.JPG" alt="Image 12"></div> -->
+        <!-- Add more images here -->
+      </div>
+      <button class="scroll-btn-3 right-3 akhir">&gt; &gt;</button>
+      <div class="counter-3"></div>
+    </div>
+  </section>
+
+  <!-- Add more images here -->
+
+  <!-- Gallery Section End -->
+
+  <!-- Crousel start -->
+  <section  class="bgbg">
+    <div class="gallerys">
+      <div class="rows">
+
+       
+        <div class="items">
+          <img src="img/member/member2.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member3.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member1.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member4.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member5.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member6.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member7.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member8.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member9.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member10.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member11.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member12.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member13.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member14.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member15.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member16.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member17.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member18.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items">
+          <img src="img/member/member19.jpg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+        <div class="items akhiran">
+          <img class="f-akiran" src="img/member/member20.jpeg" alt="Image 1">
+          <!-- <p>Description 1</p> -->
+        </div>
+      </div>
+      <!-- Tambahkan item-item galeri lainnya di sini -->
+    </div>
+    <div class="title-member">
+      <h2>Angkasa Junior</h2>
+    </div>
+    <div class="gallerys">
+      <div class="rows">
+        <div class="items">
+          <img src="img/junior/junior1.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior2.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior3.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior4.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior5.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior6.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior7.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior8.jpeg" alt="Image 1">
+        </div>
+        <div class="items">
+          <img src="img/junior/junior9.jpeg" alt="Image 1">
+        </div>
+        <div class="items akhiran">
+          <img src="img/junior/junior10.jpeg" alt="Image 1">
+        </div>
+        <div class="items akhiran">
+          <img src="img/junior/junior11.jpeg" alt="Image 1">
+        </div>
+        <div class="items akhiran">
+          <img src="img/junior/junior12.jpeg" alt="Image 1">
+        </div>
+        <div class="items akhiran">
+          <img src="img/junior/junior13.jpeg" alt="Image 1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Javascript -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- my javasript -->
+  <script src="js/main.js"></script>>
+</body>
+
+</html>
